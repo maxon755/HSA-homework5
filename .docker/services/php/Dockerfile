@@ -15,7 +15,7 @@ ADD .docker/services/bin /usr/local/bin/
 
 # extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && \
-    install-php-extensions @composer-2 xdebug mongodb
+    install-php-extensions @composer-2 xdebug pdo_mysql
 
 # working directory ownership
 RUN chown -R www-data:www-data /var/www
