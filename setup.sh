@@ -7,4 +7,8 @@ else
 fi
 
 docker-compose build --no-cache
-docker compose up -d
+docker-compose up -d
+
+sleep 10
+
+docker-compose exec app bin/console d:m:m --no-interaction
