@@ -6,7 +6,7 @@ else
     export DOCKER_GID=`stat -c '%g' /var/run/docker.sock`
 fi
 
-docker-compose build --no-cache
+docker-compose build #--no-cache
 docker-compose up -d
 
 sleep 10
